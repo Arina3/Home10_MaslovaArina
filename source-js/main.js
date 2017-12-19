@@ -44,7 +44,7 @@ function operation(oper) {
   if (MemoryNewNumber && MemoryPendingOperation !== '=') {
     display.value = MemoryCurrentNumber;
   } else {
-    MemoryCurrentNumber = true;
+    MemoryNewNumber = true;
     if (MemoryPendingOperation === '+') {
       MemoryCurrentNumber += parseFloat(localOperationMemory);
     } else if (MemoryPendingOperation === '-') {
